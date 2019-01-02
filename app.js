@@ -31,7 +31,7 @@ app.service('EmployeeService', function($http,$q) {
   this.allEmployees = [];
   this.getAllEmployees = function(){
   	var delay = $q.defer();
-  	$http.get("http://tnpensionmanagement.nextify.in/angular")
+  	$http.get("http://192.168.11.146:5984/employee/emp1")
 	.then(function(response){
 		this.allEmployees = response.data.employees;
 		//console.log(this.allEmployees);

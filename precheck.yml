@@ -1,0 +1,6 @@
+- name: Ping Precheck
+  gather_facts: false
+  hosts: jenkins
+
+  tasks:
+    - ping:
